@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<header>
+		<div class="top-header">
+			<ul class="top-header-links">
+				<div class="left">
+				<li>
+					<a href="#"><img src="src/favories.svg" alt="favories" width="25" height="25" />favories</a>
+				</li>
+				<li>
+					<a href="panier.html"><img src="src/panier.svg" alt="panier" width="25" height="25" />Panier</a>
+				</li>
+				</div>
+				<div class="center">
+					<a href="index.html"><img src="src/logo.png" alt="logo" width="400" height="100"></a>
+				</div>
+				<div class="right">
+				<li>
+					<a href="#" id="news"><img src="src/newsletter.svg" alt="newsletter" width="25" height="25" />Newsletter</a>
+				</li>
+				<li>
+					<a href="signup.html"><img src="src/compte.svg" alt="compte" width="25" height="25" />Sign up</a>
+				</li>
+				</div>
+			</ul>
+		</div>
+		<div class="promo">
+			<h3> Profitez de nos <a style="font-style: italic;color: inherit;" href="#">PROMOS!!</a></h3>
+			<h4>Nos promotions Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+				Officiis, quidem? Velit, atque alias,N'hésitez pas à visiter notre rubrique 
+				<a style="font-style: italic;color: inherit;" href="#">PROMOS</a></h4>
+		</div>	
+        <nav>
+            <ul>
+                <li><a href="homme.html">HOMME</a></li>
+                <li><a href="femme.html">FEMME</a></li>
+                <li><a href="enfant.html">ENFANT</a></li>
+			    <li><a href="#">GRANDE TAILLE</a></li>
+			    <li><a href="#">MARQUE</a></li>
+			    <li><a href="#">AUTRE</a></li>
+				<li>
+					<form action="#" method="get">
+						<input type="text" placeholder="Recherche...">
+						<button type="submit">rechercher</button>
+					  </form>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div class="newsletter">
+		<div class="newsletter-content">
+			<div class="close">+</div>
+			<p>Abonnez-vous gratuitement pour profiter de vos avantages.</p>
+			<input type="text" placeholder="Name">
+			<input type="text" placeholder="Last Name">
+			<input type="email" placeholder="E-mail Address">
+			<button type="submit">Envoyer</button>
+			<p>En cliquant sur Envoyer vous acceptez de recevoir les nouveautés , les promos , nos offres ,...
+				sur votre boite email. 
+			</p>
+		</div>
+
+	</div>
+	<main>
+		<section class="panier">
+            
+			<h1>Panier</h1>
+			<p>Total: <span id="panier-total">0.00</span> DT</p>
+			<button id="vider-panier">Vider le panier</button>
+			<button id="paiement">Passer à la caisse</button>
+            <ul id="panier-liste">
+				<!-- les produits ajoutés au panier seront affichés ici -->
+			</ul>
+		</section>
+	</main>
+    
+        <section class="footer">
+        <p>&copy; 2023 - Mon site e-commerce de vêtements</p>
+            
+        </section>
+	    <script src="newsletter.js"></script>
+		<script src="store.js"></script>
+</body>
+</html>
